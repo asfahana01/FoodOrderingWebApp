@@ -63,7 +63,7 @@ exports.login = catchAsyncErrors(async (req, res, next) => {
   if (!email || !password) {
     return next(new ErrorHandler("Please enter email & password", 400));
   }
-
+  //mongodb query to find user by email and select password field which is not selected by default in the schema.
   const user = await User.findOne({ email }).select("+password");
 
   if (!user) {

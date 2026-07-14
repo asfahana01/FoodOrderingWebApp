@@ -60,7 +60,7 @@ const userSchema = new mongoose.Schema(
   passwordResetToken: String,
   passwordResetExpires: Date,
 },
-{ timestamps: true }
+{ timestamps: true }//created at and updated at will be automatically added by mongoose in the mongoDB document.
 );
 
 // HASH PASSWORD
