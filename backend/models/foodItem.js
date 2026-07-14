@@ -36,7 +36,7 @@ const foodSchema = new mongoose.Schema({
   ],
   menu: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Menu",
+    ref: "Menu", //when 1 connection is made to another model, we use ref to refer to that model. Here we are referring to Menu model.
   },
   stock: {
     type: Number,
