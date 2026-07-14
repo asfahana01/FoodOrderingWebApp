@@ -27,6 +27,7 @@ exports.createRestaurant = catchAsync(async (req, res, next) => {
 
 //Get restaurant by id
 exports.getRestaurant = catchAsync(async (req, res, next) => {
+  //params (parameters): to fetch the id from the url (req.params) storeId is user-defined in the route path (/api/v1/eats/stores/:storeId)
   const restaurant = await Restaurant.findById(req.params.storeId);
 
   if (!restaurant)
