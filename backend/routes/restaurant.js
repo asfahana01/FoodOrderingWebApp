@@ -11,7 +11,7 @@ const {
 const { protect } = require("../controllers/authController");
 const { authorizeRoles } = require("../middlewares/authorizeRoles");
 
-//const menuRoutes = require("./menu");
+const menuRoutes = require("./menu");
 
 router
   .route("/")
@@ -23,6 +23,6 @@ router
   .get(getRestaurant)
   .delete(protect, authorizeRoles("admin"), deleteRestaurant);
 
-//router.use("/:storeId/menus", menuRoutes);
+router.use("/:storeId/menus", menuRoutes);
 
 module.exports = router;
