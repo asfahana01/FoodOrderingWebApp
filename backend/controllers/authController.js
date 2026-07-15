@@ -82,6 +82,7 @@ exports.login = catchAsyncErrors(async (req, res, next) => {
 
 
 // Protect Route
+// This middleware function is used to protect routes that require authentication. It checks for a valid JWT token in the request headers or cookies, verifies it, and attaches the authenticated user to the request object for further processing.
 exports.protect = catchAsyncErrors(async (req, res, next) => {
 
   let token;
