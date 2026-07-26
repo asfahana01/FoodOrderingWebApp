@@ -3,7 +3,6 @@ const dotenv = require("dotenv");//helps to access the env variables from config
 dotenv.config({ path: "./config/config.env" });
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-console.log("KEY", process.env.STRIPE_SECRET_KEY);
 //In frontend cart- user is adding - sends the item to the backend- 
 //processPayment is created to create a stripe session and send the session url to the frontend-
 //stripe checkout session is created- stripe generates the url-then the backend sends the url to the frontend
