@@ -7,8 +7,6 @@ node_modules/
 config/
 config.env
 
-package-lock.json
-package.json
 
 # Restaurant Reviews
 restaurant_569-reviews.json
