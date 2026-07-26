@@ -6,11 +6,11 @@ The client-side application for Food-Genie, a full-stack food ordering app. Buil
 
 ## Tech Stack
 
-- **React** — UI library
-- **Vite** — build tool & dev server
-- **Redux Toolkit** — state management (auth, cart, etc.)
-- **Axios** — API requests
-- **Stripe.js** — checkout integration
+- **React** : UI library
+- **Vite** : build tool & dev server
+- **Redux Toolkit** : state management (auth, cart, etc.)
+- **Axios** : API requests
+- **Stripe.js** : checkout integration
 
 ---
 
