@@ -26,14 +26,14 @@ A full-stack food ordering web application where users can browse restaurants, v
 ```
 Food-Genie/
 ├── backend/
-│   ├── config/         # DB, Cloudinary, and environment config
-│   ├── controllers/     # Route logic (auth, restaurants, orders, etc.)
-│   ├── middlewares/      # Auth guards, error handling
-│   ├── models/            # Mongoose schemas
-│   ├── routes/             # Express routers
+│   ├── config/              # DB, Cloudinary, and environment config
+│   ├── controllers/         # Route logic (auth, restaurants, orders, etc.)
+│   ├── middlewares/         # Auth guards, error handling
+│   ├── models/              # Mongoose schemas
+│   ├── routes/              # Express routers
 │   ├── services/            # Stripe, email, and other integrations
-│   ├── utils/                # Helper functions
-│   ├── view/                  # Pug templates
+│   ├── utils/               # Helper functions
+│   ├── view/                # Pug templates
 │   ├── app.js
 │   └── server.js
 │
@@ -42,7 +42,7 @@ Food-Genie/
 │   ├── src/
 │   │   ├── assets/
 │   │   ├── components/
-│   │   ├── redux/   # Store, slices
+│   │   ├── redux/           # Store, slices
 │   │   ├── utils/  
 │   │   ├── App.css
 │   │   ├── App.jsx
@@ -55,7 +55,7 @@ Food-Genie/
 ├── .gitattributes
 ├── .gitignore
 ├──  LICENSE
-├── README.md  <--you are here
+├── README.md       <--you are here
 ```
 
 ---
@@ -139,16 +139,17 @@ App runs on `http://localhost:5173`.
 
 ---
 
-## License
-
-This project is for educational/personal use. Add a license of your choice if open-sourcing.
-
-
----
-
 ## 👨‍💻 Author
 
 **Asfa Hana**
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/asfa-hana-a6a36a391/)
 - 🐙 [GitHub](https://github.com/asfahana01)
+
+---
+
+## License
+
+This project is licensed under the MIT License, see the [LICENSE](../LICENSE) file for details.
+
+---
