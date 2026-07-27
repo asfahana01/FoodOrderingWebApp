@@ -19,7 +19,7 @@ const restaurant = require("./routes/restaurant")
 
 // Middlewares
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ["http://localhost:5173", "https://food-ordering-web-app-seven.vercel.app/"],
   credentials: true
 }));
 app.use(cookieParser());
