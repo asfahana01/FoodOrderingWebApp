@@ -16,6 +16,7 @@ const menuRouter = require("./routes/menu");
 const order = require("./routes/order");
 const payment = require("./routes/payment");
 const restaurant = require("./routes/restaurant")
+const ErrorHandler = require("./utils/errorHandler");
 
 // Middlewares
 app.use(cors({
