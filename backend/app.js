@@ -43,10 +43,7 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 // Serve React frontend in production
-const frontendDist = path.resolve(
-  __dirname,
-  "../../frontend/dist"
-);
+const frontendDist = path.resolve(__dirname, "../frontend/dist");
 
 app.use(express.static(frontendDist));
 
