@@ -42,6 +42,28 @@ app.use("/api/v1/eats/cart", cart);
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
+// Serve React frontend in production
+const frontendDist = path.resolve(
+  __dirname,
+  "../../frontend/dist"
+);
+
+app.use(express.static(frontendDist));
+
+// React Router fallback
+app.use((req, res, next) => {
+  if (req.method === "GET" && !req.path.startsWith("/api/")) {
+    return res.sendFile(
+      path.join(frontendDist, "index.html"),
+      (err) => {
+        if (err) next(err);
+      }
+    );
+  }
+
+  next();
+});
+
 // 404 Handler
 app.use((req, res, next) => {
   next(new ErrorHandler(`Route ${req.originalUrl} not found`, 404));
